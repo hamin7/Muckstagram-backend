@@ -1,0 +1,19 @@
+{
+  "name": "Muckstagram",
+  "version": "1.0.0",
+  "repository": "https://github.com/hamin7/Muckstagram",
+  "author": "hamin <ggamini7@gmail.com>",
+  "license": "MIT",
+  "description": "Instagram clone with Express + Prisma + React Native",
+  "dependencies": {
+    "babel-node": "^0.0.1-security",
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  }
+}
