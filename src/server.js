@@ -1,5 +1,5 @@
-// require("dotenv").config();
-// import { GraphQLServer} from "graphql-yoga"  // graphql-yoga에서 GraphQLServer를 불러와야 함.
+require("dotenv").config();
+import { GraphQLServer} from "graphql-yoga"  // graphql-yoga에서 GraphQLServer를 불러와야 함.
 import logger from "morgan";
 import schema from "./schema";
 
