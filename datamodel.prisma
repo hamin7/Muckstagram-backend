@@ -1,6 +1,6 @@
 type User {
   id: ID! @id
-  usename: String! @unique
+  username: String! @unique
   email: String! @unique
   firstName: String @default(value: "")
   lastName: String
@@ -16,10 +16,10 @@ type User {
 
 type Post {
   id: ID! @id
-  files: [File!]!
   location: String
-  user: User!
   caption: String!
+  user: User!
+  files: [File!]!
   likes: [Like!]!
   comments: [Comment!]!
 }
@@ -53,6 +53,6 @@ type Message {
   id: ID! @id
   text: String!
   from: User! @relation(name: "From")
-  to: User!  @relation(name: "To")
+  to: User! @relation(name: "To")
   room: Room!
 }
