@@ -1,7 +1,7 @@
 type User {
   id: ID!
   username: String!
-  email: String! 
+  email: String!
   firstName: String
   lastName: String
   bio: String
@@ -16,10 +16,10 @@ type User {
 
 type Post {
   id: ID!
-  files: [File!]!
   location: String
-  user: User!
   caption: String!
+  user: User!
+  files: [File!]!
   likes: [Like!]!
   comments: [Comment!]!
 }
