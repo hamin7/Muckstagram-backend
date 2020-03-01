@@ -6,10 +6,6 @@ import { GraphQLServer} from "graphql-yoga"  // graphql-yoga에서 GraphQLServer
 import logger from "morgan";
 import schema from "./schema";
 
-import { sendSecretMail } from "./utils";
-
-sendSecretMail("ggamini7@gmail.com", "123");
-
 const PORT = process.env.PORT || 4000;
 
 const server = new GraphQLServer({ schema });
