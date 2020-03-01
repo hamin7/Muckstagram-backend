@@ -1,4 +1,4 @@
-const adjectives = [
+export const adjectives = [
     "cagey",
     "crowded",
     "ludicrous",
@@ -501,7 +501,7 @@ const adjectives = [
     "great"
     ];
 
-const nouns = [
+export const nouns = [
     "planes",
     "girl",
     "flavor",
