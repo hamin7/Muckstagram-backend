@@ -41,6 +41,7 @@ export const authenticateJwt = (req, res, next) =>
   })(req, res, next);   // 함수를 리턴, 실행하고 나면 다음 함수로 넘어가는것. 리턴된 함수를 (req, res, next)로 실행.
   // 이 경우에는 그 실행해야 하는 함수가 graphql 함수.
 
+// Strategy를 활용해서 jwt 토큰을 추출.
 passport.use(new Strategy(jwtOptions, verifyUser));
 
 passport.initialize();

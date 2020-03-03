@@ -1,6 +1,6 @@
-import dotenv from "dotenv";
-import path from "path";
-dotenv.config({ path: path.resolve(__dirname, ".env") });
+// import dotenv from "dotenv";
+// import path from "path";
+// dotenv.config({ path: path.resolve(__dirname, ".env") });
 
 import { adjectives, nouns } from "./words";
 import nodemailer from "nodemailer";

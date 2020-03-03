@@ -1,4 +1,4 @@
-# Outstagram
+# Muckstagram
 Instagram clone with Express + Prisma + React Native
 
 ## User Stories
