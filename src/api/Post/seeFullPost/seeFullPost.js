@@ -16,10 +16,14 @@ export default {
         })
         .aggregate()
         .count();
+      const files = await prisma.post({ id }).files();  // 포스트의 파일을 보여줌.
+      const user = await prisma.post({ id }).user();  // 포스트를 작성한 것이 누구인지.
       return {
         post,
         comments,
-        likeCount
+        likeCount,
+        files,
+        user
       };
     }
   }
