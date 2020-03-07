@@ -1,0 +1,14 @@
+# enum(열거)은 하나 또는 나머지라고 생각하면 됨. 여기서는 DELETE 또는 EDIT라고 생각하면 됨.
+enum ACTIONS {
+  EDIT
+  DELETE
+}
+
+type Mutation {
+  editPost(
+    id: String!
+    caption: String
+    location: String
+    action: ACTIONS!
+  ): Post
+}
