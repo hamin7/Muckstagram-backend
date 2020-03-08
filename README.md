@@ -18,7 +18,7 @@ Instagram clone with Express + Prisma + React Native
 - [x] See the full post
 - [x] Upload post
 - [x] Edit the post (Delete)
-- [ ] See the feed
+- [x] See the feed
 - [ ] See rooms
 - [ ] See room
 - [ ] Send private Message
