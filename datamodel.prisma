@@ -37,7 +37,8 @@ type Comment {
   id: ID! @id
   text: String!
   user: User @relation(name: "CommentsOfUser")
-  post: Post! @relation(name: "CommentsOfPost")
+  post: Post @relation(name: "CommentOfPost")
+}
 
 type File {
   id: ID! @id
