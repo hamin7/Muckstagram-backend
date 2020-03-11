@@ -2,6 +2,11 @@ import { prisma } from "../../../generated/prisma-client";
 
 export default {
   Post: {
+    // fragment 사용하지 않는 코드.
+    files: ({ id }) => prisma.post({ id }).files(),
+    comments: ({ id }) => prisma.post({ id }).comments(),
+    user: ({ id }) => prisma.post({ id }).user(),
+    likes: ({ id }) => prisma.post({ id }).likes(),
     isLiked: (parent, _, { request }) => {
       const { user } = request;
       const { id } = parent;
